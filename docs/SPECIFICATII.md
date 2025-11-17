@@ -27,26 +27,21 @@ Realizarea unei aplicații web pentru acordarea de feedback continuu la activit�
 
 ## Structura proiectului
 continuous-feedback-app/
-├─ docs/ # Documentație și specificații
-│ └─ SPECIFICATII.md
-├─ frontend/ # Codul frontend (React.js)
-│ └─ .gitkeep
-├─ backend/ # Codul backend (Node.js)
-│ └─ .gitkeep
-└─ README.md
-
+├─ docs/       # Documentație și specificații
+├─ frontend/   # Cod frontend (React.js)
+└─ backend/    # Cod backend (Node.js)
 
 ## Etape de livrare
-- **16.11.2025** – Specifikații, plan proiect și structura repo în GitHub  
+- **16.11.2025** – Specificații, plan proiect și structura repo în GitHub  
 - **06.12.2025** – Serviciu RESTful funcțional + instrucțiuni de rulare  
 - **Demo final** – Aplicația completă funcțională  
 
 ## Membri echipă
-- Catinca Am (coordonator)
-- [Numele colegei 1]
-- [Numele colegei 2]
-- Profesor coordonator: [Numele profesorului]
+- Ana-Miruna Grigore
+- Daria-Maria Marica
+- Mara-Catinca Marinescu
+- Profesor coordonator: [nume profesor]
 
 ## Observații
-- Structura inițială este pregătită pentru dezvoltarea frontend și backend.
-- Documentația poate fi actualizată pe măsură ce codul devine funcțional.
+- Structura inițială pregătită pentru dezvoltarea frontend și backend.
+- Documentația va fi actualizată pe măsură ce codul devine funcțional.
