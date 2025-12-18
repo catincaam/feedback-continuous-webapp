@@ -10,7 +10,7 @@ import Feedback from './Feedback.js';
 env.config();
 
 /* -------------------- CREATE DATABASE -------------------- */
-async function Create_DB() {
+/*async function Create_DB() {
     let conn;
 
     try {
@@ -28,7 +28,7 @@ async function Create_DB() {
     } catch (err) {
         console.warn(err.stack);
     }
-}
+}*/
 
 /* -------------------- FOREIGN KEYS -------------------- */
 function FK_Config() {
@@ -60,7 +60,9 @@ async function DB_Init() {
 
   FK_Config();
 
-  await db.authenticate();
+  //await db.authenticate();
   await db.sync({ alter: true });
 }
+
+console.log("DATABASE_URL:", process.env.DATABASE_URL ? "SET" : "MISSING");
 export default DB_Init;
