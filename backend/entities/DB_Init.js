@@ -57,10 +57,10 @@ function FK_Config() {
 
 /* -------------------- INIT DATABASE -------------------- */
 async function DB_Init() {
-    await Create_DB();
-    FK_Config();
 
-    await db.sync({ alter: true });
+  FK_Config();
+
+  await db.authenticate();
+  await db.sync({ alter: true });
 }
-
 export default DB_Init;
