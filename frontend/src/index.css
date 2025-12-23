@@ -1209,3 +1209,29 @@ body{
   border-radius: 14px;
   font-weight: 900;
 }
+
+.aCol {
+  display: flex;
+  align-items: flex-end;
+}
+
+.aStack {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.aSeg {
+  width: 100%;
+}
+
+.aEmptyBar {
+  height: 6%;
+  opacity: 0.12;
+  background: #9ca3af; /* gri soft */
+  border-radius: 999px;
+}
