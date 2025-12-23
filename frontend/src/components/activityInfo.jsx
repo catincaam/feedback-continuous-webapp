@@ -341,25 +341,32 @@ export default function ActivityInfo() {
             </div>
 
             <div className="aChart">
-              {series.map((p, idx) => {
-                const h1 = Math.round(clamp01(p.happy) * 100);
-                const h2 = Math.round(clamp01(p.surprised) * 100);
-                const h3 = Math.round(clamp01(p.confused) * 100);
-                const h4 = Math.round(clamp01(p.sad) * 100);
+                {series.map((p, idx) => {
+                  const happy = Math.round(clamp01(p.happy) * 100);
+                  const surprised = Math.round(clamp01(p.surprised) * 100);
+                  const confused = Math.round(clamp01(p.confused) * 100);
+                  const sad = Math.round(clamp01(p.sad) * 100);
 
-                const max = Math.max(h1, h2, h3, h4);
-                let cls = "blueBar";
-                if (max === h2) cls = "yellowBar";
-                else if (max === h3) cls = "purpleBar";
-                else if (max === h4) cls = "redBar";
+                  const total = happy + surprised + confused + sad;
 
-                return (
-                  <div className="aCol" key={idx} title={`bucket ${idx + 1}`}>
-                    <div className={`aBar ${cls}`} style={{ height: `${max}%` }} />
-                  </div>
-                );
-              })}
-            </div>
+                  return (
+                    <div className="aCol" key={idx} title={`bucket ${idx + 1}`}>
+                      <div className="aStack">
+                        {total === 0 ? (
+                          <div className="aEmptyBar" />
+                        ) : (
+                          <>
+                            <div className="aSeg redBar" style={{ height: `${sad}%` }} />
+                            <div className="aSeg purpleBar" style={{ height: `${confused}%` }} />
+                            <div className="aSeg yellowBar" style={{ height: `${surprised}%` }} />
+                            <div className="aSeg blueBar" style={{ height: `${happy}%` }} />
+                          </>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
 
             <div className="aChartAxis">
               <span>{axis[0]}</span>
