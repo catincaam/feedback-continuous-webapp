@@ -58,11 +58,34 @@ export default function RegisterTeacher() {
     <div className="registerPage" style={{ minHeight: '100vh', background: '#f6f7f8', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ width: '100%', maxWidth: 420, background: '#fff', borderRadius: 16, boxShadow: '0 4px 24px #0001', padding: 32, position: 'relative' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 24 }}>
-          <button onClick={() => navigate('/')} style={{ background: 'none', border: 'none', color: '#277bf1', fontWeight: 600, fontSize: 18, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 4 }}>
-            <span style={{ fontSize: 22 }}>🏠</span> Home
+          <button onClick={() => navigate('/')} style={{
+            background: '#fff',
+            border: '1px solid #cfd9e8',
+            color: '#277bf1',
+            fontWeight: 600,
+            fontSize: 15,
+            borderRadius: 8,
+            padding: '8px 18px',
+            cursor: 'pointer',
+            boxShadow: '0 1px 4px #277bf111',
+            transition: 'background 0.2s',
+            marginRight: 8
+          }}>
+            Home
           </button>
-          <button onClick={() => navigate('/professor/login')} style={{ background: 'none', border: 'none', color: '#4b6c9b', fontWeight: 500, fontSize: 15, cursor: 'pointer' }}>
-            Already have an account?
+          <button onClick={() => navigate('/professor/login')} style={{
+            background: '#fff',
+            border: '1px solid #cfd9e8',
+            color: '#277bf1',
+            fontWeight: 600,
+            fontSize: 15,
+            borderRadius: 8,
+            padding: '8px 18px',
+            cursor: 'pointer',
+            boxShadow: '0 1px 4px #277bf111',
+            transition: 'background 0.2s'
+          }}>
+            Professor Login
           </button>
         </div>
         <div style={{ textAlign: 'center', marginBottom: 18 }}>
@@ -128,8 +151,21 @@ export default function RegisterTeacher() {
             <span style={{ fontSize: 14 }}>I agree to the <a href="#" style={{ color: '#277bf1', textDecoration: 'underline' }}>Terms</a> and <a href="#" style={{ color: '#277bf1', textDecoration: 'underline' }}>Privacy Policy</a></span>
           </div>
           {error && <div style={{ color: "crimson", marginBottom: 8, fontWeight: 500 }}>{error}</div>}
-          <button className="registerBtn" type="submit" disabled={loading} style={{ background: '#277bf1', color: '#fff', border: 'none', borderRadius: 8, padding: '12px 0', fontWeight: 700, fontSize: 17, marginTop: 6, boxShadow: '0 2px 8px #277bf122', cursor: 'pointer', transition: 'background 0.2s' }}>
-            {loading ? "Creating..." : "Create account"}
+          <button className="registerBtn" type="submit" disabled={loading} style={{
+            background: '#fff',
+            border: '1.5px solid #277bf1',
+            color: '#277bf1',
+            borderRadius: 8,
+            padding: '12px 0',
+            fontWeight: 700,
+            fontSize: 17,
+            marginTop: 6,
+            boxShadow: '0 2px 8px #277bf122',
+            cursor: 'pointer',
+            transition: 'background 0.2s',
+            width: '100%'
+          }}>
+            {loading ? "Creating..." : "Creează cont"}
           </button>
         </form>
       </div>

@@ -98,12 +98,12 @@ export default function LandingPage() {
               from your students.
             </p>
 
-            <div className="profActions">
+            <div className="profActions" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               <button className="btn btnOutline" onClick={() => nav("/professor/login")}> 
                 Professor Login <span aria-hidden="true">→</span>
               </button>
-              <button className="btn btnPrimary" style={{marginLeft:8}} onClick={() => nav("/professor/register")}> 
-                Creează profesorul <span aria-hidden="true">+</span>
+              <button className="btn btnOutline" style={{marginTop:4}} onClick={() => nav("/professor/register")}> 
+                Creează cont profesor <span aria-hidden="true">+</span>
               </button>
             </div>
           </div>
