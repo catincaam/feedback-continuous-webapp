@@ -4,7 +4,9 @@ import ProtectedRoute from "./routes/protectedRoute";
 import TeacherDashboard from "./components/teacherDashboard";
 import StudentFeedback from "./components/studentFeedback";
 import ActivityInfo from "./components/activityInfo";
+
 import Login from "./components/login";
+import RegisterTeacher from "./components/RegisterTeacher";
 
 
 export default function App() {
@@ -13,6 +15,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/professor/login" element={<Login />} />
+        <Route path="/professor/register" element={<RegisterTeacher />} />
         <Route path="/student/:accessCode" element={<StudentFeedback />} />
 
         <Route

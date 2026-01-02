@@ -1,8 +1,18 @@
+
 import Teacher from "../entities/Teacher.js";
 import LikeOp from "./Operators.js"; // operatorul LIKE (ex: Sequelize.Op.like)
+import bcrypt from "bcryptjs";
 
 async function createTeacher(payload) {
-  return await Teacher.create(payload);
+  // Map fields from frontend to model
+  const teacherData = {
+    Name: payload.name,
+    Email: payload.email,
+  };
+  if (payload.password) {
+    teacherData.PasswordHash = await bcrypt.hash(payload.password, 10);
+  }
+  return await Teacher.create(teacherData);
 }
 
 async function getTeachers() {

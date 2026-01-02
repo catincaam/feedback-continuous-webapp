@@ -99,10 +99,12 @@ export default function LandingPage() {
             </p>
 
             <div className="profActions">
-              <button className="btn btnOutline" onClick={() => nav("/professor/login")}>
+              <button className="btn btnOutline" onClick={() => nav("/professor/login")}> 
                 Professor Login <span aria-hidden="true">→</span>
               </button>
-    
+              <button className="btn btnPrimary" style={{marginLeft:8}} onClick={() => nav("/professor/register")}> 
+                Creează profesorul <span aria-hidden="true">+</span>
+              </button>
             </div>
           </div>
         </section>
