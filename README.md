@@ -6,7 +6,7 @@ Students can provide quick, anonymous feedback using emoji-based reactions, whil
 
 ---
 
-## 🧠 Overview
+## Overview
 
 The application enables:
 - **Real-time feedback collection** from students
@@ -16,7 +16,7 @@ The application enables:
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 continuous-feedback-app/
 ├── docs/ # Documentation, specifications, test plans
@@ -48,7 +48,7 @@ continuous-feedback-app/
 
 ---
 
-## 🚀 Features
+## Features
 
 - Emoji-based feedback collection
 - Role-based access (students / teachers)
@@ -58,7 +58,7 @@ continuous-feedback-app/
 
 ---
 
-## ⚙️ Setup & Development
+## Setup & Development
 
 ### Quick setup (development)
 
@@ -73,7 +73,7 @@ Backend will be available at:
 http://localhost:3000
 (if configured accordingly)
 
-📄 Documentation & Useful Files
+Documentation & Useful Files
 docs/openapi.yaml – OpenAPI / Swagger specification for core endpoints
 
 docs/TEST_PLAN.md – Manual and recommended automated tests
@@ -84,7 +84,8 @@ backend/tests/api.test.js – API test stub (Jest + Supertest)
 
 backend/Dockerfile – Backend service containerization
 
-👥 Team
+Team
+
 Ana-Miruna Grigore
 
 Daria-Maria Marica
@@ -93,7 +94,7 @@ Mara-Catinca Marinescu
 
 Coordinating professor: Cimpeanu Ion Alexandru
 
-📌 Notes
+Notes
 This project was developed as part of a university course and focuses on learning full-stack web development, teamwork, and clean project structure.
 
 It is intended for educational and portfolio purposes.
