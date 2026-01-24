@@ -73,7 +73,7 @@ Backend will be available at:
 http://localhost:3000
 (if configured accordingly)
 
-Documentation & Useful Files
+## Documentation & Useful Files
 docs/openapi.yaml – OpenAPI / Swagger specification for core endpoints
 
 docs/TEST_PLAN.md – Manual and recommended automated tests
@@ -84,7 +84,7 @@ backend/tests/api.test.js – API test stub (Jest + Supertest)
 
 backend/Dockerfile – Backend service containerization
 
-Team
+## Team
 
 Ana-Miruna Grigore
 
@@ -94,7 +94,7 @@ Mara-Catinca Marinescu
 
 Coordinating professor: Cimpeanu Ion Alexandru
 
-Notes
+## Notes
 This project was developed as part of a university course and focuses on learning full-stack web development, teamwork, and clean project structure.
 
 It is intended for educational and portfolio purposes.
