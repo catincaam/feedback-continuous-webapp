@@ -88,8 +88,6 @@ backend/Dockerfile – Backend service containerization
 
 Ana-Miruna Grigore
 
-Daria-Maria Marica
-
 Mara-Catinca Marinescu
 
 Coordinating professor: Cimpeanu Ion Alexandru
