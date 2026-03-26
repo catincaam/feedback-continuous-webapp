@@ -1,7 +1,5 @@
 import Sequelize from "sequelize";
-import env from "dotenv";
 
-env.config();
 
 const db = new Sequelize(
   process.env.DATABASE_URL,

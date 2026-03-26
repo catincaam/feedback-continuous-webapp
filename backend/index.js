@@ -1,5 +1,5 @@
 import express from "express";
-import dotenv from "dotenv";
+import "dotenv/config";
 import cors from "cors";
 
 import DB_Init from "./entities/DB_Init.js";
@@ -10,8 +10,6 @@ import activityRouter from "./routes/ActivityRouter.js";
 import feedbackRouter from "./routes/FeedbackRouter.js";
 import createDbRouter from "./routes/createDbRouter.js";
 
-
-dotenv.config();
 
 const app = express();
 
