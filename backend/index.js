@@ -10,6 +10,7 @@ import activityRouter from "./routes/ActivityRouter.js";
 import feedbackRouter from "./routes/FeedbackRouter.js";
 import createDbRouter from "./routes/createDbRouter.js";
 
+
 dotenv.config();
 
 const app = express();
@@ -61,4 +62,4 @@ DB_Init().catch((err) => console.error("Failed to initialize database", err));
 
 
 const PORT = process.env.PORT || 9001;
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+app.listen(PORT, "0.0.0.0", () => console.log(`Listening on ${PORT}`));

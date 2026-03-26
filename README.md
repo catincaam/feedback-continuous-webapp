@@ -1,51 +1,113 @@
 # Continuous Feedback WebApp
 
-## Descriere
-Aplicație web pentru acordarea de feedback continuu la cursuri și seminarii. Studenții reacționează prin emoticoane, iar profesorii vizualizează feedback anonim în timp real sau ulterior.
+A full-stack web application for collecting real-time, anonymous student feedback during courses and seminars.
 
-## Structura proiectului
+Students provide quick feedback using emoji-based reactions, while teachers gain actionable insights through real-time dashboards and aggregated analytics.
+
+Developed as a team project within a university course.
+
+---
+
+## Demo
+
+### Landing page
+
+
+### Student Feedback
+
+
+### Activity Dashboard
+
+
+---
+
+## Overview
+
+The application enables:
+- **Real-time feedback collection** from students
+- **Anonymous reactions** to lectures and seminars
+- **Dashboard views** for teachers to monitor engagement and sentiment
+- Clear separation between frontend, backend, and documentation
+
+---
+
+## Project Structure
+
 continuous-feedback-app/
-├─ docs/       # Documentație și specificații
-├─ frontend/   # Cod frontend React.js
-├─ backend/    # Cod backend Node.js
-└─ README.md
+├── docs/ # Documentation, specifications, test plans
+├── frontend/ # React.js frontend application
+├── backend/ # Node.js REST API
+└── README.md
 
-## Tehnologii
-- Frontend: React.js (SPA)
-- Backend: Node.js (REST API)
-- Bază de date relațională (MySQL/PostgreSQL) accesată prin ORM
-- Versionare: Git/GitHub
 
-## Echipa
-- Ana-Miruna Grigore
-- Daria-Maria Marica
-- Mara-Catinca Marinescu
-- Profesor coordonator: [nume profesor]
+---
 
-## Instrucțiuni
-Quick setup (development):
+## 🛠️ Tech Stack
 
-1. Copy env example and edit values:
+### Frontend
+- **React.js** (Single Page Application)
+- Component-based architecture
+- Client-side routing and services layer
 
-```powershell
+### Backend
+- **Node.js**
+- **REST API**
+- Authentication middleware
+- Relational database access (MySQL / PostgreSQL)
+
+### Other
+- **Docker & Docker Compose** (local development)
+- **OpenAPI / Swagger** specification
+- **Jest + Supertest** (API testing)
+- **Git / GitHub** for version control
+
+---
+
+## Features
+
+- Emoji-based feedback collection
+- Role-based access (students / teachers)
+- Anonymous feedback storage
+- Teacher dashboards for activity and feedback visualization
+- RESTful API with documented endpoints
+
+---
+
+## Setup & Development
+
+### Quick setup (development)
+
+1. Copy environment variables example:
+   
 cp .env.example .env
-```
+Start services using Docker Compose:
 
-2. Start services with Docker Compose (requires Docker):
-
-```powershell
 docker-compose up --build
-```
+Backend will be available at:
 
-3. Backend will be available at `http://localhost:3000` (if configured so).
+http://localhost:3000
+(if configured accordingly)
 
-Useful files added (see `docs/` and repo root):
+## Documentation & Useful Files
+docs/openapi.yaml – OpenAPI / Swagger specification for core endpoints
 
-- `docs/openapi.yaml` — OpenAPI/Swagger spec for core endpoints
-- `.env.example` — example environment variables
-- `backend/Dockerfile` — Dockerfile for backend service
-- `docker-compose.yml` — compose to run Postgres + backend
-- `docs/TEST_PLAN.md` — manual + recommended automated tests
-- `backend/tests/api.test.js` — test stub (Jest + supertest)
-- `docs/CURL_EXAMPLES.md` — curl commands for manual testing
+docs/TEST_PLAN.md – Manual and recommended automated tests
 
+docs/CURL_EXAMPLES.md – cURL commands for manual API testing
+
+backend/tests/api.test.js – API test stub (Jest + Supertest)
+
+backend/Dockerfile – Backend service containerization
+
+## Team
+
+Ana-Miruna Grigore
+
+Mara-Catinca Marinescu
+
+Coordinating professor: Cimpeanu Ion Alexandru
+
+## Notes
+This project was developed as part of a university course and focuses on learning full-stack web development, teamwork, and clean project structure.
+
+It is intended for educational and portfolio purposes.
