@@ -1,8 +1,10 @@
 # Continuous Feedback WebApp
 
-A **web application for continuous feedback** during courses and seminars, developed as a **team project** as part of a university course.
+A full-stack web application for collecting real-time, anonymous student feedback during courses and seminars.
 
-Students can provide quick, anonymous feedback using emoji-based reactions, while teachers can visualize aggregated feedback in real time or review it later.
+Students provide quick feedback using emoji-based reactions, while teachers gain actionable insights through real-time dashboards and aggregated analytics.
+
+Developed as a team project within a university course.
 
 ---
 
